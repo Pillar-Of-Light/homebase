@@ -4,14 +4,13 @@ A modern, responsive musician's website built with Next.js, TypeScript, and Tail
 
 ## Features
 
-- 🎵 **Home Page** - Dynamic hero section with featured albums
-- 👤 **About Page** - Artist biography and achievements
-- 🎸 **Music Page** - Discography with streaming platform links
-- 🎥 **Videos Page** - Music videos and live performances
-- 🎤 **Tour Page** - Upcoming tour dates and ticket information
-- 📧 **Contact Page** - Contact form and social media links
-- 📱 **Responsive Design** - Mobile-friendly with Tailwind CSS
-- 🎨 **Modern UI** - Clean design with smooth transitions
+- **Home Page** - Dynamic hero section with featured albums
+- **About Page** - Artist biography and achievements
+- **Music Page** - Discography with streaming platform links
+- **Videos Page** - Music videos and live performances
+- **Tour Page** - Upcoming tour dates and ticket information
+- **Contact Page** - Contact form and social media links
+- **Responsive Design** - Mobile-friendly with Tailwind CSS
 
 ## Tech Stack
 
