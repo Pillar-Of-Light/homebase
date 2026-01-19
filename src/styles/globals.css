@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, var(--color-void) 0%, var(--color-deep-space) 50%, var(--color-nebula) 100%);
+  background-attachment: fixed;
+  color: var(--color-light);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Glow Text */
+.glow-text {
+  color: var(--color-gold);
+  text-shadow: var(--glow-gold);
+  font-weight: bold;
+  display: inline-block;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px var(--color-gold), 0 0 20px var(--color-gold), 0 0 30px var(--color-gold);
+  }
+  50% {
+    text-shadow: 0 0 20px var(--color-gold), 0 0 40px var(--color-gold), 0 0 60px var(--color-gold);
+  }
+}
+
+/* Section Styles */
+section {
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-gray);
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-gold-bright);
+  text-shadow: var(--glow-gold);
+}
+
+/* Footer */
+.footer {
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  border-top: 1px solid var(--color-gold-dim);
+  margin-top: var(--spacing-xl);
+}
+
+.footer-inner p {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+
+/* Cosmic Effects */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  section { padding: var(--spacing-md) var(--spacing-sm); }
+}
