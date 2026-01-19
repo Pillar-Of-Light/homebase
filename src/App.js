@@ -23,7 +23,12 @@ function App() {
       <Header />
 
       <main>
-        {/* test components here */}
+        <Landing />
+        <Doctrine />
+        <Music />
+        <Visuals />
+        <Writings />
+        <Communion />
       </main>
 
       <Footer />
