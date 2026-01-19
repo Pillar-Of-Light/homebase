@@ -4,20 +4,20 @@ import GoldDivider from "../ui/gold-divider";
 export default function Doctrine() {
   const principles = [
     {
-      title: "I. THE VOID SPEAKS",
-      text: "In silence, find the noise. In noise, find the truth.",
+      title: "I. FAITH IN EXPRESSION",
+      text: "Through music and art, we express what words alone cannot. Faith becomes visible, audible, tangible.",
     },
     {
-      title: "II. SACRED DISTORTION",
-      text: "Beauty emerges from broken frequencies and fractured harmonies.",
+      title: "II. BEAUTY IN BROKENNESS",
+      text: "God meets us in our imperfection. In broken places, we find grace and redemption.",
     },
     {
-      title: "III. COSMIC COMMUNION",
-      text: "We are receivers and transmitters, channels for the universal signal.",
+      title: "III. COMMUNION WITH TRUTH",
+      text: "In shared experience, we connect with the divine and with one another.",
     },
     {
-      title: "IV. EXPERIMENTAL FAITH",
-      text: "Question every note. Deconstruct every rhythm. Rebuild from chaos.",
+      title: "IV. EXPERIMENTAL DEVOTION",
+      text: "Question, explore, deconstruct. Through inquiry, we deepen our understanding of faith.",
     },
   ];
 
@@ -26,14 +26,14 @@ export default function Doctrine() {
       <h2
         style={{
           textAlign: "center",
-          color: "var(--color-gold)",
+          color: "#22c55e",
           fontFamily: "var(--font-heading)",
           fontSize: "2.5rem",
           letterSpacing: "0.2rem",
           marginBottom: "3rem",
         }}
       >
-        THE DOCTRINE
+        BELIEFS
       </h2>
 
       <GoldDivider />
@@ -59,7 +59,7 @@ export default function Doctrine() {
                 lineHeight: "1.8",
                 fontStyle: "italic",
                 paddingLeft: "2rem",
-                borderLeft: "2px solid var(--color-gold-dim)",
+                borderLeft: "2px solid var(--color-green-dark)",
               }}
             >
               {principle.text}
@@ -73,16 +73,16 @@ export default function Doctrine() {
           textAlign: "center",
           marginTop: "4rem",
           padding: "2rem",
-          border: "1px solid var(--color-gold-dim)",
-          background: "rgba(255, 215, 0, 0.02)",
+          border: "1px solid var(--color-green-dark)",
+          background: "rgba(34, 197, 94, 0.02)",
         }}
       >
         <p style={{ color: "var(--color-gray)", fontSize: "0.95rem", lineHeight: "1.8", fontStyle: "italic" }}>
-          "The experimental is not a genre—it is a posture. <br />
-          A willingness to fail, to fragment, to find the divine in the dissonant."
+          "The artistic is not separate from the spiritual—it is a pathway to it. <br />
+          A willingness to listen, to witness, to encounter the sacred in unexpected places."
         </p>
         <p style={{ color: "var(--color-gold)", marginTop: "1rem", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
-          — zonkleberg manifesto, 2024
+          — zonkleberg Statement of Faith, 2024
         </p>
       </div>
     </section>

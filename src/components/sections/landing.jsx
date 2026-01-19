@@ -43,8 +43,8 @@ export default function Landing() {
           letterSpacing: "0.1rem",
         }}
       >
-        Where experimental sound meets cosmic gospel.
-        <br />A transmission from the void.
+        Expressing faith through experimental music and art.
+        <br />A vessel for spiritual truth.
       </p>
       
       <div style={{ marginTop: "2rem" }}>
@@ -74,7 +74,7 @@ export default function Landing() {
             e.target.style.boxShadow = "0 0 20px transparent";
           }}
         >
-          Enter the Void
+          Explore Our Work
         </a>
       </div>
     </section>

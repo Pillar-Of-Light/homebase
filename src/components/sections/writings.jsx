@@ -4,21 +4,21 @@ import GoldDivider from "../ui/gold-divider";
 export default function Writings() {
   const writings = [
     {
-      title: "On Silence as Sound",
+      title: "The Sacred in Silence",
       date: "Jan 2026",
-      excerpt: "The spaces between notes are not empty. They are pregnant with possibility, heavy with the weight of what could have been and what might still be...",
+      excerpt: "Exploring how silence becomes a language of its own. The spaces between words carry weight—the presence of God in the absence of noise...",
       readTime: "5 min",
     },
     {
-      title: "Manifesto for the Broken Frequency",
+      title: "Art as Witness",
       date: "Dec 2025",
-      excerpt: "We reject the pristine. We embrace the glitch, the error, the unexpected rupture in the signal. Here, in the broken places, we find divinity...",
+      excerpt: "We create not to escape reality, but to bear witness to it. Through art, we testify to what we've seen, experienced, and learned...",
       readTime: "8 min",
     },
     {
-      title: "Field Notes: Recording the Void",
+      title: "Finding God in Broken Things",
       date: "Nov 2025",
-      excerpt: "Spent three days in an anechoic chamber. The silence was deafening. You hear your own blood, your nervous system, the electricity of thought itself...",
+      excerpt: "Brokenness is not failure. It is often where grace enters. A reflection on restoration, redemption, and the beauty found in repair...",
       readTime: "12 min",
     },
   ];
@@ -28,14 +28,14 @@ export default function Writings() {
       <h2
         style={{
           textAlign: "center",
-          color: "var(--color-gold)",
+          color: "#22c55e",
           fontFamily: "var(--font-heading)",
           fontSize: "2.5rem",
           letterSpacing: "0.2rem",
           marginBottom: "3rem",
         }}
       >
-        WRITTEN TRANSMISSIONS
+        REFLECTIONS & WRITINGS
       </h2>
 
       <GoldDivider />
@@ -47,24 +47,24 @@ export default function Writings() {
             style={{
               marginBottom: "3rem",
               padding: "2rem",
-              border: "1px solid var(--color-gold-dim)",
-              background: "rgba(255, 215, 0, 0.02)",
+              border: "1px solid var(--color-green-dark)",
+              background: "rgba(34, 197, 94, 0.02)",
               transition: "all 0.3s ease",
               cursor: "pointer",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "var(--color-gold)";
-              e.currentTarget.style.background = "rgba(255, 215, 0, 0.05)";
+              e.currentTarget.style.borderColor = "var(--color-green-primary)";
+              e.currentTarget.style.background = "rgba(34, 197, 94, 0.05)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "var(--color-gold-dim)";
-              e.currentTarget.style.background = "rgba(255, 215, 0, 0.02)";
+              e.currentTarget.style.borderColor = "var(--color-green-dark)";
+              e.currentTarget.style.background = "rgba(34, 197, 94, 0.02)";
             }}
           >
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", marginBottom: "1rem" }}>
               <h3
                 style={{
-                  color: "var(--color-gold)",
+                  color: "var(--color-green-primary)",
                   fontFamily: "var(--font-heading)",
                   fontSize: "1.3rem",
                   letterSpacing: "0.1rem",

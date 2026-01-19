@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, var(--color-void) 0%, var(--color-deep-space) 50%, var(--color-nebula) 100%);
+  background: linear-gradient(135deg, #0a0f0a 0%, #1a2a1f 50%, #0d1f14 100%);
   background-attachment: fixed;
   color: var(--color-light);
   font-family: var(--font-body);
@@ -27,8 +27,8 @@ main {
 
 /* Glow Text */
 .glow-text {
-  color: var(--color-gold);
-  text-shadow: var(--glow-gold);
+  color: var(--color-green-primary);
+  text-shadow: var(--glow-green);
   font-weight: bold;
   display: inline-block;
   animation: pulse-glow 3s ease-in-out infinite;
@@ -36,10 +36,10 @@ main {
 
 @keyframes pulse-glow {
   0%, 100% {
-    text-shadow: 0 0 10px var(--color-gold), 0 0 20px var(--color-gold), 0 0 30px var(--color-gold);
+    text-shadow: 0 0 10px var(--color-green-primary), 0 0 20px var(--color-green-primary), 0 0 30px var(--color-green-primary);
   }
   50% {
-    text-shadow: 0 0 20px var(--color-gold), 0 0 40px var(--color-gold), 0 0 60px var(--color-gold);
+    text-shadow: 0 0 20px var(--color-green-primary), 0 0 40px var(--color-green-primary), 0 0 60px var(--color-green-primary);
   }
 }
 

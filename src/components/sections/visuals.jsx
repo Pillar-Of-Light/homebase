@@ -4,22 +4,22 @@ import GoldDivider from "../ui/gold-divider";
 export default function Visuals() {
   const visualWorks = [
     {
-      title: "GLITCH CATHEDRAL",
+      title: "LIGHT IN DARKNESS",
       year: "2026",
       medium: "Generative video / live performance",
-      description: "Real-time visualization of audio frequencies collapsing into sacred geometry",
+      description: "Visual exploration of spiritual awakening and illumination",
     },
     {
-      title: "VOID STUDIES NO. 1-7",
+      title: "PRESENCE STUDIES",
       year: "2025",
-      medium: "Digital stills",
-      description: "Meditations on emptiness through corrupted image data",
+      medium: "Digital installations",
+      description: "Meditations on encountering the sacred in ordinary moments",
     },
     {
-      title: "TRANSMISSION SERIES",
+      title: "REDEMPTION SERIES",
       year: "2024-ongoing",
-      medium: "Video installations",
-      description: "Visual interpretations of cosmic signals and radio static",
+      medium: "Multimedia installations",
+      description: "Visual narratives of transformation and spiritual renewal",
     },
   ];
 
@@ -28,14 +28,14 @@ export default function Visuals() {
       <h2
         style={{
           textAlign: "center",
-          color: "var(--color-gold)",
+          color: "#22c55e",
           fontFamily: "var(--font-heading)",
           fontSize: "2.5rem",
           letterSpacing: "0.2rem",
           marginBottom: "3rem",
         }}
       >
-        VISUAL TRANSMISSIONS
+        VISUAL EXPRESSIONS
       </h2>
 
       <GoldDivider />
@@ -45,17 +45,17 @@ export default function Visuals() {
           <div
             key={index}
             style={{
-              border: "1px solid var(--color-gold-dim)",
+              border: "1px solid var(--color-green-dark)",
               overflow: "hidden",
               transition: "all 0.3s ease",
               cursor: "pointer",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "var(--color-gold)";
-              e.currentTarget.style.boxShadow = "0 0 30px rgba(255, 215, 0, 0.2)";
+              e.currentTarget.style.borderColor = "var(--color-green-primary)";
+              e.currentTarget.style.boxShadow = "0 0 30px rgba(34, 197, 94, 0.2)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "var(--color-gold-dim)";
+              e.currentTarget.style.borderColor = "var(--color-green-dark)";
               e.currentTarget.style.boxShadow = "none";
             }}
           >
@@ -96,7 +96,7 @@ export default function Visuals() {
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.5rem" }}>
                 <h3
                   style={{
-                    color: "var(--color-gold)",
+                    color: "var(--color-green-primary)",
                     fontFamily: "var(--font-heading)",
                     fontSize: "1.1rem",
                     letterSpacing: "0.1rem",
@@ -119,7 +119,7 @@ export default function Visuals() {
 
       <div style={{ marginTop: "4rem", textAlign: "center" }}>
         <p style={{ color: "var(--color-gray)", fontSize: "0.9rem", fontStyle: "italic" }}>
-          Visual works available for exhibitions, installations, and performance integrations.
+          Visual works available for worship spaces, community gatherings, and spiritual events.
         </p>
       </div>
     </section>

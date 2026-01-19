@@ -11,7 +11,7 @@ export default function Communion() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    alert("Transmission received. The void acknowledges your signal.");
+    alert("Thank you for reaching out. We received your message and will respond soon.");
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -27,7 +27,7 @@ export default function Communion() {
       <h2
         style={{
           textAlign: "center",
-          color: "var(--color-gold)",
+          color: "#22c55e",
           fontFamily: "var(--font-heading)",
           fontSize: "2.5rem",
           letterSpacing: "0.2rem",
@@ -50,8 +50,9 @@ export default function Communion() {
             fontStyle: "italic",
           }}
         >
-          Reach out. Share your signal. <br />
-          All transmissions are received and considered.
+          We invite you to connect, share, and be part of our community.
+          <br />
+          Your voice and story matter.
         </p>
 
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
@@ -60,7 +61,7 @@ export default function Communion() {
               htmlFor="name"
               style={{
                 display: "block",
-                color: "var(--color-gold)",
+                color: "#22c55e",
                 fontFamily: "var(--font-heading)",
                 fontSize: "0.85rem",
                 letterSpacing: "0.1rem",
@@ -68,7 +69,7 @@ export default function Communion() {
                 textTransform: "uppercase",
               }}
             >
-              Name / Alias
+              Name
             </label>
             <input
               type="text"
@@ -81,18 +82,18 @@ export default function Communion() {
                 width: "100%",
                 padding: "0.75rem",
                 background: "transparent",
-                border: "1px solid var(--color-gold-dim)",
+                border: "1px solid #16a34a",
                 color: "var(--color-light)",
                 fontFamily: "var(--font-heading)",
                 fontSize: "0.9rem",
                 transition: "all 0.3s ease",
               }}
               onFocus={(e) => {
-                e.target.style.borderColor = "var(--color-gold)";
-                e.target.style.boxShadow = "0 0 20px rgba(255, 215, 0, 0.1)";
+                e.target.style.borderColor = "#22c55e";
+                e.target.style.boxShadow = "0 0 20px rgba(34, 197, 94, 0.3)";
               }}
               onBlur={(e) => {
-                e.target.style.borderColor = "var(--color-gold-dim)";
+                e.target.style.borderColor = "#16a34a";
                 e.target.style.boxShadow = "none";
               }}
             />
@@ -103,7 +104,7 @@ export default function Communion() {
               htmlFor="email"
               style={{
                 display: "block",
-                color: "var(--color-gold)",
+                color: "#22c55e",
                 fontFamily: "var(--font-heading)",
                 fontSize: "0.85rem",
                 letterSpacing: "0.1rem",
@@ -111,7 +112,7 @@ export default function Communion() {
                 textTransform: "uppercase",
               }}
             >
-              Email Signal
+              Email Address
             </label>
             <input
               type="email"
@@ -124,18 +125,18 @@ export default function Communion() {
                 width: "100%",
                 padding: "0.75rem",
                 background: "transparent",
-                border: "1px solid var(--color-gold-dim)",
+                border: "1px solid #16a34a",
                 color: "var(--color-light)",
                 fontFamily: "var(--font-heading)",
                 fontSize: "0.9rem",
                 transition: "all 0.3s ease",
               }}
               onFocus={(e) => {
-                e.target.style.borderColor = "var(--color-gold)";
-                e.target.style.boxShadow = "0 0 20px rgba(255, 215, 0, 0.1)";
+                e.target.style.borderColor = "#22c55e";
+                e.target.style.boxShadow = "0 0 20px rgba(34, 197, 94, 0.3)";
               }}
               onBlur={(e) => {
-                e.target.style.borderColor = "var(--color-gold-dim)";
+                e.target.style.borderColor = "#16a34a";
                 e.target.style.boxShadow = "none";
               }}
             />
@@ -146,7 +147,7 @@ export default function Communion() {
               htmlFor="message"
               style={{
                 display: "block",
-                color: "var(--color-gold)",
+                color: "#22c55e",
                 fontFamily: "var(--font-heading)",
                 fontSize: "0.85rem",
                 letterSpacing: "0.1rem",
@@ -154,7 +155,7 @@ export default function Communion() {
                 textTransform: "uppercase",
               }}
             >
-              Transmission
+              Message
             </label>
             <textarea
               id="message"
@@ -167,7 +168,7 @@ export default function Communion() {
                 width: "100%",
                 padding: "0.75rem",
                 background: "transparent",
-                border: "1px solid var(--color-gold-dim)",
+                border: "1px solid #16a34a",
                 color: "var(--color-light)",
                 fontFamily: "var(--font-heading)",
                 fontSize: "0.9rem",
@@ -175,11 +176,11 @@ export default function Communion() {
                 transition: "all 0.3s ease",
               }}
               onFocus={(e) => {
-                e.target.style.borderColor = "var(--color-gold)";
-                e.target.style.boxShadow = "0 0 20px rgba(255, 215, 0, 0.1)";
+                e.target.style.borderColor = "#22c55e";
+                e.target.style.boxShadow = "0 0 20px rgba(34, 197, 94, 0.3)";
               }}
               onBlur={(e) => {
-                e.target.style.borderColor = "var(--color-gold-dim)";
+                e.target.style.borderColor = "#16a34a";
                 e.target.style.boxShadow = "none";
               }}
             />
@@ -190,8 +191,8 @@ export default function Communion() {
             style={{
               padding: "1rem 2rem",
               background: "transparent",
-              border: "2px solid var(--color-gold)",
-              color: "var(--color-gold)",
+              border: "2px solid #22c55e",
+              color: "#22c55e",
               fontFamily: "var(--font-heading)",
               fontSize: "0.9rem",
               letterSpacing: "0.15rem",
@@ -201,32 +202,32 @@ export default function Communion() {
               marginTop: "1rem",
             }}
             onMouseEnter={(e) => {
-              e.target.style.background = "var(--color-gold)";
+              e.target.style.background = "#22c55e";
               e.target.style.color = "var(--color-void)";
-              e.target.style.boxShadow = "0 0 30px rgba(255, 215, 0, 0.3)";
+              e.target.style.boxShadow = "0 0 30px rgba(34, 197, 94, 0.4)";
             }}
             onMouseLeave={(e) => {
               e.target.style.background = "transparent";
-              e.target.style.color = "var(--color-gold)";
+              e.target.style.color = "#22c55e";
               e.target.style.boxShadow = "none";
             }}
           >
-            Send Transmission
+            Send Message
           </button>
         </form>
 
         <div style={{ marginTop: "4rem", textAlign: "center" }}>
           <p style={{ color: "var(--color-gray)", fontSize: "0.85rem", marginBottom: "1rem" }}>
-            Or find me in other dimensions:
+            Connect with us:
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap" }}>
-            <a href="#" style={{ color: "var(--color-gold)", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
+            <a href="#" style={{ color: "#22c55e", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
               Instagram
             </a>
-            <a href="#" style={{ color: "var(--color-gold)", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
+            <a href="#" style={{ color: "#22c55e", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
               Twitter
             </a>
-            <a href="#" style={{ color: "var(--color-gold)", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
+            <a href="#" style={{ color: "#22c55e", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
               Email
             </a>
           </div>

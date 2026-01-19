@@ -1,17 +1,17 @@
 :root {
-  /* Colors - Cosmic/Experimental Palette */
-  --color-void: #0a0a0f;
-  --color-deep-space: #1a1a2e;
-  --color-nebula: #16213e;
-  --color-stardust: #0f3460;
+  /* Colors - Green/Gold Palette */
+  --color-void: #0a0f0a;
+  --color-deep-space: #0f1a12;
+  --color-nebula: #1a2a1f;
+  --color-stardust: #0d1f14;
   
   --color-gold: #ffd700;
   --color-gold-dim: #b8860b;
   --color-gold-bright: #ffe44d;
   
-  --color-cosmic-purple: #8b5cf6;
-  --color-cosmic-blue: #3b82f6;
-  --color-cosmic-pink: #ec4899;
+  --color-green-primary: #22c55e;
+  --color-green-dark: #16a34a;
+  --color-green-bright: #4ade80;
   
   --color-light: #e5e5e5;
   --color-gray: #9ca3af;
@@ -29,8 +29,8 @@
   
   /* Effects */
   --glow-gold: 0 0 10px var(--color-gold), 0 0 20px var(--color-gold), 0 0 30px var(--color-gold);
-  --glow-purple: 0 0 10px var(--color-cosmic-purple), 0 0 20px var(--color-cosmic-purple);
-  --glow-blue: 0 0 10px var(--color-cosmic-blue), 0 0 20px var(--color-cosmic-blue);
+  --glow-green: 0 0 10px var(--color-green-primary), 0 0 20px var(--color-green-primary);
+  --glow-green-bright: 0 0 10px var(--color-green-bright), 0 0 20px var(--color-green-bright);
   
   /* Transitions */
   --transition-fast: 0.2s ease;
