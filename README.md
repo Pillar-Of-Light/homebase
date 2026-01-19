@@ -4,12 +4,12 @@ A modern, single-page portfolio website template built with React, featuring a c
 
 ## Features
 
-- 🎨 Modern, responsive design with green primary and gold accent colors
-- 🎵 Sections for Music, Visuals, Writings, and Beliefs
-- 📝 Contact form (Communion section)
-- ✨ Smooth animations and hover effects
-- 📱 Mobile-friendly layout
-- 🎭 Easy to customize content and styling
+- Modern, responsive design with green primary and gold accent colors
+- Sections for Music, Visuals, Writings, and Beliefs
+- Contact form (Communion section)
+- Smooth animations and hover effects
+- Mobile-friendly layout
+- Easy to customize content and styling
 
 ## Prerequisites
 
