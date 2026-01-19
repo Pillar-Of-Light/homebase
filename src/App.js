@@ -12,18 +12,18 @@ import Visuals from "./components/sections/visuals";
 import Writings from "./components/sections/writings";
 import Communion from "./components/sections/communion";
 
-// ui
-import GlowText from "./components/ui/glow-text";
-import GoldDivider from "./components/ui/gold-divider";
-import CosmicContainer from "./components/ui/cosmic-container";
-
 function App() {
   return (
     <div className="App">
       <Header />
 
       <main>
-        {/* test components here */}
+        <Landing />
+        <Doctrine />
+        <Music />
+        <Visuals />
+        <Writings />
+        <Communion />
       </main>
 
       <Footer />
