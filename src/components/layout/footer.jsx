@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <GoldDivider />
       <div className="footer-inner">
-        <p>© {new Date().getFullYear()} zonkleberg — cosmic gospel in motion</p>
+        <p>© {new Date().getFullYear()} zonkleberg</p>
       </div>
     </footer>
   );

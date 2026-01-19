@@ -1,14 +1,14 @@
 import React from "react";
 
-export default function GlowText({ children, size = "1rem" }) {
+export default function GlowText({ children, size = "2rem" }) {
   return (
-    <span
-      className="glow-text"
-      style={{
-        fontSize: size,
-      }}
-    >
+    <h1 style={{
+      fontSize: size,
+      color: "var(--accent)",
+      fontWeight: "700",
+      margin: 0
+    }}>
       {children}
-    </span>
+    </h1>
   );
 }

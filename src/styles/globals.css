@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Accent Text */
+.glow-text {
+  color: var(--accent);
+}
+
+/* Divider */
+.gold-divider {
+  width: 80px;
+  height: 3px;
+  background: var(--accent);
+  margin: var(--space-md) auto;
+  border-radius: 2px;
+}
+
+/* Site Header */
+.site-header {
+  padding: var(--space-md);
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-primary);
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Sections */
+section {
+  padding: var(--space-xl) var(--space-md);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.landing-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.doctrine-section,
+.music-section,
+.visuals-section,
+.writings-section,
+.communion-section {
+  margin-bottom: var(--space-xl);
+}
+
+/* Container */
+.cosmic-container {
+  border: 1px solid var(--border);
+  padding: var(--space-md);
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+/* Card */
+.glow-card {
+  border: 1px solid var(--border);
+  padding: var(--space-md);
+  background: var(--bg-primary);
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.glow-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Button */
+.gold-button {
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  border: none;
+  color: white;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gold-button:hover {
+  background: var(--accent-dark);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* Custom Input & Textarea */
+.custom-input,
+.custom-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.custom-input:focus,
+.custom-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.custom-textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Gallery Item */
+.gallery-item {
+  overflow: hidden;
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+  margin-top: var(--space-2xl);
+}
+
+.footer-inner {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.gallery-item {
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.gallery-item:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: scale(1.02);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: var(--space-lg);
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Section Title */
+.section-title {
+  color: var(--text-primary);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+}
+
+/* Scripture Divider */
+.scripture-divider {
+  width: 80px;
+  height: 3px;
+  background: var(--accent);
+  margin: var(--space-md) auto;
+  border-radius: 2px;
+}
+
+/* Drop Cap */
+.dropcap {
+  float: left;
+  font-size: 4rem;
+  line-height: 1;
+  margin-right: var(--space-sm);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+  margin-top: var(--space-2xl);
+}
+
+.footer p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  section {
+    padding: var(--space-lg) var(--space-sm);
+  }
+}

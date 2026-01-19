@@ -1,5 +1,15 @@
 import React from "react";
 
 export default function SectionTitle({ children }) {
-  return <h2 className="section-title">{children}</h2>;
+  return (
+    <h2 style={{
+      fontSize: "2rem",
+      fontWeight: "700",
+      color: "var(--text-primary)",
+      textAlign: "center",
+      marginBottom: "var(--space-sm)"
+    }}>
+      {children}
+    </h2>
+  );
 }
