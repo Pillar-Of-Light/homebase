@@ -23,6 +23,7 @@ export default function Visuals() {
       description: "Visual narratives of transformation and spiritual renewal",
     },
   ];
+  const displayWorks = visualWorks.slice(0, 3);
 
   return (
     <section id="visuals" style={{ paddingTop: "6rem" }}>
