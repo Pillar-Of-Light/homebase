@@ -1,5 +1,6 @@
 import React from "react";
 import GoldDivider from "../ui/gold-divider";
+import { Link } from "react-router-dom";
 
 export default function Visuals() {
   const visualWorks = [
@@ -122,6 +123,23 @@ export default function Visuals() {
           Visual works available for worship spaces, community gatherings, and spiritual events.
         </p>
       </div>
+      <Link
+        to="/visuals"
+        style={{
+          display: "inline-block",
+          padding: "1rem 2rem",
+          border: "1px solid var(--color-gold)",
+          color: "var(--color-gold)",
+          fontFamily: "var(--font-heading)",
+          fontSize: "0.85rem",
+          letterSpacing: "0.1rem",
+          textTransform: "uppercase",
+          transition: "all 0.3s ease",
+          textDecoration: "none"
+        }}
+        >
+          View All Visuals
+        </Link>
     </section>
   );
 }
