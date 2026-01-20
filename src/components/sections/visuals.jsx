@@ -43,7 +43,7 @@ export default function Visuals() {
       <GoldDivider />
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem", marginTop: "3rem" }}>
-        {visualWorks.map((work, index) => (
+        {displayWorks.map((work, index) => (
           <div
             key={index}
             style={{
