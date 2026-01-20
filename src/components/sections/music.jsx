@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import GoldDivider from "../ui/gold-divider";
 
 export default function Music() {
@@ -104,6 +105,34 @@ export default function Music() {
             </a>
           </div>
         ))}
+      </div>
+
+      <div style={{ textAlign: "center", marginTop: "3rem" }}>
+        <Link
+          to="/music"
+          style={{
+            display: "inline-block",
+            padding: "1rem 2rem",
+            border: "1px solid var(--color-gold)",
+            color: "var(--color-gold)",
+            fontFamily: "var(--font-heading)",
+            fontSize: "0.85rem",
+            letterSpacing: "0.1rem",
+            textTransform: "uppercase",
+            transition: "all 0.3s ease",
+            textDecoration: "none",
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.background = "var(--color-gold)";
+            e.target.style.color = "#0a0f0a";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.background = "transparent";
+            e.target.style.color = "var(--color-gold)";
+          }}
+        >
+          View All Music
+        </Link>
       </div>
 
       <div style={{ marginTop: "4rem", textAlign: "center" }}>
