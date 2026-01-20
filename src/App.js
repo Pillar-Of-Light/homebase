@@ -1,33 +1,20 @@
 import React from "react";
-
-// layout
-import Header from "./components/layout/header";
-import Footer from "./components/layout/footer";
-
-// sections
-import Landing from "./components/sections/landing";
-import Doctrine from "./components/sections/doctrine";
-import Music from "./components/sections/music";
-import Visuals from "./components/sections/visuals";
-import Writings from "./components/sections/writings";
-import Communion from "./components/sections/communion";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingMain from './pages/landing';
+import AllMusic from './pages/allmusic';
+/* import VisualsPage from './pages/VisualsPage';
+import WritingsPage from './pages/WritingsPage'; */
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-
-      <main>
-        <Landing />
-        <Doctrine />
-        <Music />
-        <Visuals />
-        <Writings />
-        <Communion />
-      </main>
-
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingMain />} />
+        <Route path="/music" element={<AllMusic />} />
+        { /* <Route path="/visuals" element={<VisualsPage />} />
+        <Route path="/writings" element={<WritingsPage />} /> */}
+      </Routes>
+    </Router>
   );
 }
 

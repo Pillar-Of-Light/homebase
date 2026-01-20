@@ -4,6 +4,12 @@ import GoldDivider from "../ui/gold-divider";
 export default function Music() {
   const releases = [
     {
+        title: "AVALANCHES",
+        year: "2026",
+        description: "A reflection on overwhelming forces and spiritual journeys",
+        link: "#",
+    },
+    {
       title: "HYMNS FOR OUR TIME",
       year: "2026",
       description: "Contemporary songs exploring faith, doubt, and spiritual seeking",
@@ -22,6 +28,7 @@ export default function Music() {
       link: "#",
     },
   ];
+  const displayReleases = releases.slice(0, 3);
 
   return (
     <section id="music" style={{ paddingTop: "6rem" }}>
@@ -41,7 +48,7 @@ export default function Music() {
       <GoldDivider />
 
       <div style={{ display: "grid", gap: "2rem", marginTop: "3rem" }}>
-        {releases.map((release, index) => (
+        {displayReleases.map((release, index) => (
           <div
             key={index}
             style={{

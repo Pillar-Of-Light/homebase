@@ -8,7 +8,7 @@ import Visuals from "../components/sections/visuals";
 import Writings from "../components/sections/writings";
 import Communion from "../components/sections/communion";
 
-export default function HomePage() {
+export default function LandingMain() {
   return (
     <div className="App">
       <Header />
