@@ -53,6 +53,7 @@ export default function AllWritings() {
             letterSpacing: "0.2rem",
             marginTop: "2rem",
             marginBottom: "3rem",
+            animation: "flicker-fast 3s ease-in-out infinite",
           }}>
             ALL WRITINGS
           </h2>

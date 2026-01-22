@@ -56,6 +56,7 @@ export default function AllMusic() {
                         letterSpacing: "0.2rem",
                         marginTop: "2rem",
                         marginBottom: "3rem",
+                        animation: "flicker-medium 4s ease-in-out infinite",
                     }}>
                         ALL MUSIC
                     </h2>

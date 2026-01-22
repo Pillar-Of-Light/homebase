@@ -25,7 +25,7 @@ main {
   flex: 1;
 }
 
-/* Glow Text */
+/* Glow text */
 .glow-text {
   color: var(--color-green-primary);
   text-shadow: var(--glow-green);
@@ -41,6 +41,93 @@ main {
   50% {
     text-shadow: 0 0 20px var(--color-green-primary), 0 0 40px var(--color-green-primary), 0 0 60px var(--color-green-primary);
   }
+}
+
+@keyframes light-flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 10px var(--color-green-primary), 
+                 0 0 20px var(--color-green-primary);
+  }
+  20%, 24%, 55% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+/* Flicker control */
+@keyframes flicker-slow {
+  0%, 100% { opacity: 1; }
+  10% { opacity: 0.85; }
+  20% { opacity: 0.95; }
+  30% { opacity: 0.9; }
+  50% { opacity: 0.8; }
+  70% { opacity: 0.95; }
+}
+
+@keyframes flicker-medium {
+  0%, 100% { opacity: 1; }
+  15% { opacity: 0.75; }
+  25% { opacity: 0.9; }
+  40% { opacity: 0.7; }
+  60% { opacity: 0.95; }
+  80% { opacity: 0.85; }
+}
+
+@keyframes flicker-fast {
+  0%, 100% { opacity: 1; }
+  5% { opacity: 0.6; }
+  12% { opacity: 0.9; }
+  18% { opacity: 0.7; }
+  25% { opacity: 0.95; }
+  35% { opacity: 0.75; }
+  50% { opacity: 0.8; }
+  65% { opacity: 0.9; }
+  80% { opacity: 0.65; }
+}
+
+@keyframes flicker-erratic {
+  0%, 100% { opacity: 1; }
+  8% { opacity: 0.5; }
+  10% { opacity: 0.95; }
+  12% { opacity: 0.6; }
+  14% { opacity: 1; }
+  20% { opacity: 0.7; }
+  22% { opacity: 0.9; }
+  45% { opacity: 0.55; }
+  48% { opacity: 0.85; }
+  75% { opacity: 0.65; }
+  78% { opacity: 1; }
+}
+
+/* Apply variable flickers to sections - Add these classes to your section IDs */
+#music h2, #music h3 {
+  animation: flicker-slow 6s ease-in-out infinite;
+}
+
+#visuals h2, #visuals h3 {
+  animation: flicker-medium 4s ease-in-out infinite;
+}
+
+#writings h2, #writings h3 {
+  animation: flicker-fast 3s ease-in-out infinite;
+}
+
+#doctrine h2, #doctrine h3 {
+  animation: flicker-erratic 5s ease-in-out infinite;   
+}
+
+#communion h2 {
+  animation: flicker-slow 7s ease-in-out infinite;
+}
+
+@keyframes ambient-flicker {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(0.95); }
+}
+
+body {
+  animation: ambient-flicker 3s ease-in-out infinite;
 }
 
 /* Section Styles */

@@ -31,6 +31,7 @@ export default function Doctrine() {
           fontSize: "2.5rem",
           letterSpacing: "0.2rem",
           marginBottom: "3rem",
+          animation: "flicker-erratic 5s ease-in-out infinite",
         }}
       >
         BELIEFS

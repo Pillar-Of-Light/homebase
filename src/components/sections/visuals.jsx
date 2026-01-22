@@ -35,6 +35,7 @@ export default function Visuals() {
           fontSize: "2.5rem",
           letterSpacing: "0.2rem",
           marginBottom: "3rem",
+          animation: "flicker-medium 4s ease-in-out infinite",
         }}
       >
         VISUAL EXPRESSIONS

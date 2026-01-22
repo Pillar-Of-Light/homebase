@@ -36,6 +36,7 @@ export default function Writings() {
           fontSize: "2.5rem",
           letterSpacing: "0.2rem",
           marginBottom: "3rem",
+          animation: "flicker-fast 3s ease-in-out infinite",
         }}
       >
         REFLECTIONS & WRITINGS
