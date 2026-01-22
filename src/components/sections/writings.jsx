@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import GoldDivider from "../ui/gold-divider";
 
 export default function Writings() {
@@ -23,6 +24,8 @@ export default function Writings() {
     },
   ];
 
+  const displayWritings = writings.slice(0, 3);
+
   return (
     <section id="writings" style={{ paddingTop: "6rem" }}>
       <h2
@@ -39,7 +42,7 @@ export default function Writings() {
       </h2>
 
       <GoldDivider />
-
+displayW
       <div style={{ maxWidth: "800px", margin: "3rem auto" }}>
         {writings.map((writing, index) => (
           <article
@@ -97,8 +100,8 @@ export default function Writings() {
       </div>
 
       <div style={{ textAlign: "center", marginTop: "3rem" }}>
-        <a
-          href="#"
+        <Link
+          to="/writings"
           style={{
             display: "inline-block",
             padding: "1rem 2rem",
@@ -109,10 +112,11 @@ export default function Writings() {
             letterSpacing: "0.1rem",
             textTransform: "uppercase",
             transition: "all 0.3s ease",
+            textDecoration: "none",
           }}
           onMouseEnter={(e) => {
             e.target.style.background = "var(--color-gold)";
-            e.target.style.color = "var(--color-void)";
+            e.target.style.color = "#0a0f0a";
           }}
           onMouseLeave={(e) => {
             e.target.style.background = "transparent";
@@ -120,7 +124,7 @@ export default function Writings() {
           }}
         >
           View All Writings
-        </a>
+        </Link>
       </div>
     </section>
   );

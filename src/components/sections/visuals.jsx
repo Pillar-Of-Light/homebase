@@ -120,27 +120,35 @@ export default function Visuals() {
       </div>
 
       <div style={{ marginTop: "4rem", textAlign: "center" }}>
-        <p style={{ color: "var(--color-gray)", fontSize: "0.9rem", fontStyle: "italic" }}>
+        <p style={{ color: "var(--color-gray)", fontSize: "0.9rem", fontStyle: "italic", marginBottom: "2rem" }}>
           Visual works available for worship spaces, community gatherings, and spiritual events.
         </p>
-      </div>
-      <Link
-        to="/visuals"
-        style={{
-          display: "inline-block",
-          padding: "1rem 2rem",
-          border: "1px solid var(--color-gold)",
-          color: "var(--color-gold)",
-          fontFamily: "var(--font-heading)",
-          fontSize: "0.85rem",
-          letterSpacing: "0.1rem",
-          textTransform: "uppercase",
-          transition: "all 0.3s ease",
-          textDecoration: "none"
-        }}
+        <Link
+          to="/visuals"
+          style={{
+            display: "inline-block",
+            padding: "1rem 2rem",
+            border: "1px solid var(--color-gold)",
+            color: "var(--color-gold)",
+            fontFamily: "var(--font-heading)",
+            fontSize: "0.85rem",
+            letterSpacing: "0.1rem",
+            textTransform: "uppercase",
+            transition: "all 0.3s ease",
+            textDecoration: "none"
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.background = "var(--color-gold)";
+            e.target.style.color = "#0a0f0a";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.background = "transparent";
+            e.target.style.color = "var(--color-gold)";
+          }}
         >
           View All Visuals
         </Link>
+      </div>
     </section>
   );
 }
