@@ -217,6 +217,22 @@ export default function Communion() {
           </button>
         </form>
 
+        <div style={{ marginTop: "4rem", textAlign: "center" }}>
+          <p style={{ color: "var(--color-gray)", fontSize: "0.85rem", marginBottom: "1rem" }}>
+            Connect with us:
+          </p>
+          <div style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap" }}>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: "#22c55e", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
+              Instagram
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={{ color: "#22c55e", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
+              Twitter
+            </a>
+            <a href="mailto:contact@example.com" style={{ color: "#22c55e", fontSize: "0.85rem", letterSpacing: "0.1rem" }}>
+              Email
+            </a>
+          </div>
+        </div>
 
       </div>
     </section>

@@ -41,7 +41,7 @@ export default function Writings() {
       </h2>
 
       <GoldDivider />
-displayW
+
       <div style={{ maxWidth: "800px", margin: "3rem auto" }}>
         {writings.map((writing, index) => (
           <article
