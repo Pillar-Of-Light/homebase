@@ -138,19 +138,8 @@ export default function Music() {
 
       <div style={{ marginTop: "4rem", textAlign: "center" }}>
         <p style={{ color: "var(--color-gray)", marginBottom: "1rem", fontSize: "0.9rem" }}>
-          Listen on all major platforms:
+          Available on major streaming platforms
         </p>
-        <div style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap" }}>
-          <a href="#" style={{ color: "var(--color-gold)", fontSize: "0.9rem", letterSpacing: "0.1rem" }}>
-            Bandcamp
-          </a>
-          <a href="#" style={{ color: "var(--color-gold)", fontSize: "0.9rem", letterSpacing: "0.1rem" }}>
-            SoundCloud
-          </a>
-          <a href="#" style={{ color: "var(--color-gold)", fontSize: "0.9rem", letterSpacing: "0.1rem" }}>
-            Spotify
-          </a>
-        </div>
       </div>
     </section>
   );

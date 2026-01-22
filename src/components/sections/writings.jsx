@@ -24,8 +24,6 @@ export default function Writings() {
     },
   ];
 
-  const displayWritings = writings.slice(0, 3);
-
   return (
     <section id="writings" style={{ paddingTop: "6rem" }}>
       <h2
@@ -84,18 +82,18 @@ displayW
             <p style={{ color: "var(--color-gray)", lineHeight: "1.8", marginBottom: "1rem" }}>
               {writing.excerpt}
             </p>
-            <a
-              href="#"
+            <span
               style={{
                 color: "var(--color-gold)",
                 fontFamily: "var(--font-heading)",
                 fontSize: "0.85rem",
+                cursor: "pointer",
                 letterSpacing: "0.1rem",
                 textTransform: "uppercase",
               }}
             >
               Read More →
-            </a>
+            </span>
           </article>
         ))}
       </div>
